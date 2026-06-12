@@ -26,7 +26,7 @@ jobs:
       - ${{ matrix.al_version }}
     steps:
       - name: Checkout this repo for Amazon Linux 2023
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4
       - uses: ./.github/actions/install-python
       - uses: ./.github/actions/clone-source
       - uses: ./.github/actions/sync-source-dependencies
